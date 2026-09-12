@@ -1,3 +1,5 @@
+<p align="center"><img src="https://raw.githubusercontent.com/jisr-pay/.github/main/assets/icon.svg" alt="Jisr" width="72"></p>
+
 # Jisr Routing
 
 Provider interface and indicative quote comparison foundation. No live providers are configured, and this package neither executes payments nor claims to provide live exchange rates.
@@ -18,6 +20,6 @@ Each provider has a unique `id` and an asynchronous `quote(request, { signal })`
 
 Only quotes for the identical source/destination units and send amount are compared. Results rank by net recipient amount descending, then estimated time ascending, then provider ID. Expired or malformed quotes are excluded; provider failures and timeouts are isolated and reported without internal error details. Expiry is checked again after all providers finish.
 
-Six tests exercise exact ranking, currency/debit consistency, failures, timeouts, payload stripping, expiry, input validation and adapter input isolation. CI runs Windows and Linux. No marketing comparison data is imported from the web app.
+Six tests exercise exact ranking, currency/debit consistency, failures, timeouts, payload stripping, expiry, input validation and adapter input isolation. A reference provider (`createFixtureProvider`, `src/providers/fixture.js`) demonstrates a fully spec-compliant onboarding — fee-inclusive integer math, corridor checks, abort handling and expiry — with seven integration tests wiring it through `collectQuotes`. Onboarding rules are documented in [docs/PROVIDER_ONBOARDING.md](docs/PROVIDER_ONBOARDING.md). CI runs Windows and Linux. No marketing comparison data is imported from the web app.
 
 The repository was created by the project owner ahead of live-provider integration. Keep the npm package unpublished (`private: true` in package.json), and consume it from jisr-api only when the API needs quote collection. This setting does not change GitHub repository visibility. Provider onboarding requires documented corridor support, precision, fee conventions, expiry and a real integration test. Wallet/payments remain SDK responsibilities.
