@@ -158,3 +158,12 @@ Open a focused feat/fix/test/docs branch. PRs explain behavior and actual valida
 - [Expose quote identity and refresh metadata](https://github.com/jisr-pay/jisr-routing/issues/3)
 - [Bound Horizon response sizes and path counts](https://github.com/jisr-pay/jisr-routing/issues/4)
 - [Add typed package exports and a consumer check](https://github.com/jisr-pay/jisr-routing/issues/5)
+
+## Published contributor issues
+
+- [Add captured Horizon path fixtures with provenance](https://github.com/jisr-pay/jisr-routing/issues/2) — proposed medium.
+- [Expose quote identity and refresh metadata](https://github.com/jisr-pay/jisr-routing/issues/3) — proposed medium.
+- [Bound Horizon response sizes and path counts](https://github.com/jisr-pay/jisr-routing/issues/4) — proposed medium.
+- [Add typed package exports and a consumer check](https://github.com/jisr-pay/jisr-routing/issues/5) — proposed medium.
+- [Add an explicit delivered-amount slippage policy](https://github.com/jisr-pay/jisr-routing/issues/9) — proposed medium.
+- [Document empty-liquidity and expired-quote recovery](https://github.com/jisr-pay/jisr-routing/issues/6) — proposed trivial.
