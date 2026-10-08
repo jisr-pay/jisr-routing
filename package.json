@@ -1,0 +1,14 @@
+{
+  "name": "@jisr-pay/routing",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "exports": "./src/index.js",
+  "files": ["src"],
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "test": "node --test",
+    "build": "node --check src/index.js && node --check examples/quote.js"
+  },
+  "dependencies": { "@stellar/stellar-sdk": "16.0.1" }
+}
