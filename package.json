@@ -1,0 +1,10 @@
+{
+  "name": "@jisr-pay/routing",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "engines": { "node": ">=24.15.0 <25" },
+  "scripts": { "test": "node --test --test-isolation=none", "build": "node --check src/index.js" }
+}
